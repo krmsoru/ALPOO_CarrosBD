@@ -1,0 +1,14 @@
+create database ALPOO_CarrosBD;
+go
+use ALPOO_CarrosBD;
+go
+create table Carros
+(
+	id int primary key identity(1,1),
+	fabricante varchar(30),
+	modelo varchar(30),
+	cor varchar(15),
+	ano_fabricacao int,
+	valor float,
+)
+go
