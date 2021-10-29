@@ -5,6 +5,8 @@
  */
 package Apresentacao;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Usuario
@@ -28,77 +30,99 @@ public class frmPrincipal extends javax.swing.JDialog
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
-        jPanel1 = new javax.swing.JPanel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jPanel = new javax.swing.JPanel();
+        lblBG = new javax.swing.JLabel();
+        jMenuBar = new javax.swing.JMenuBar();
         mnuCarros = new javax.swing.JMenu();
         mniCadastrar = new javax.swing.JMenuItem();
         mniPFMEE = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Carro CRUD");
+        setIconImage(null);
+        setLocationByPlatform(true);
+        setMaximumSize(new java.awt.Dimension(425, 625));
+        setMinimumSize(new java.awt.Dimension(300, 200));
+        setPreferredSize(new java.awt.Dimension(500, 300));
+        setResizable(false);
+        setSize(new java.awt.Dimension(500, 300));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+        lblBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Files/bg.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jPanelLayout = new javax.swing.GroupLayout(jPanel);
+        jPanel.setLayout(jPanelLayout);
+        jPanelLayout.setHorizontalGroup(
+            jPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelLayout.createSequentialGroup()
+                .addComponent(lblBG, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 49, Short.MAX_VALUE)
+        jPanelLayout.setVerticalGroup(
+            jPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblBG, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
-        jMenuBar1.setBackground(new java.awt.Color(236, 236, 236));
-        jMenuBar1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jMenuBar1.setForeground(new java.awt.Color(0, 0, 0));
-        jMenuBar1.setPreferredSize(new java.awt.Dimension(52, 35));
+        jMenuBar.setBackground(new java.awt.Color(45, 45, 45));
+        jMenuBar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jMenuBar.setForeground(new java.awt.Color(255, 255, 255));
+        jMenuBar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jMenuBar.setPreferredSize(new java.awt.Dimension(52, 35));
 
-        mnuCarros.setBackground(new java.awt.Color(177, 177, 177));
-        mnuCarros.setForeground(new java.awt.Color(0, 0, 0));
+        mnuCarros.setBackground(new java.awt.Color(51, 51, 51));
+        mnuCarros.setForeground(new java.awt.Color(204, 204, 204));
         mnuCarros.setText("Carros");
 
-        mniCadastrar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.SHIFT_DOWN_MASK));
-        mniCadastrar.setBackground(new java.awt.Color(183, 183, 183));
+        mniCadastrar.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_1, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
+        mniCadastrar.setBackground(new java.awt.Color(51, 51, 51));
         mniCadastrar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        mniCadastrar.setForeground(new java.awt.Color(0, 0, 0));
+        mniCadastrar.setForeground(new java.awt.Color(204, 204, 204));
         mniCadastrar.setText("Cadastrar");
-        mniCadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mniCadastrar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mniCadastrarActionPerformed(evt);
             }
         });
         mnuCarros.add(mniCadastrar);
 
-        mniPFMEE.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.SHIFT_DOWN_MASK));
-        mniPFMEE.setBackground(new java.awt.Color(183, 183, 183));
+        mniPFMEE.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_2, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
+        mniPFMEE.setBackground(new java.awt.Color(51, 51, 51));
         mniPFMEE.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        mniPFMEE.setForeground(new java.awt.Color(0, 0, 0));
+        mniPFMEE.setForeground(new java.awt.Color(204, 204, 204));
         mniPFMEE.setText("Pesquisar, editar ou excluir");
-        mniPFMEE.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        mniPFMEE.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 mniPFMEEActionPerformed(evt);
             }
         });
         mnuCarros.add(mniPFMEE);
 
-        jMenuBar1.add(mnuCarros);
+        jMenuBar.add(mnuCarros);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -107,13 +131,13 @@ public class frmPrincipal extends javax.swing.JDialog
 
     private void mniCadastrarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mniCadastrarActionPerformed
     {//GEN-HEADEREND:event_mniCadastrarActionPerformed
-        frmCadastro frmC = new frmCadastro(null,true);
+        frmCadastro frmC = new frmCadastro(null, true);
         frmC.setVisible(true);
     }//GEN-LAST:event_mniCadastrarActionPerformed
 
     private void mniPFMEEActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mniPFMEEActionPerformed
     {//GEN-HEADEREND:event_mniPFMEEActionPerformed
-        frmPesquisarEditarExcluir frmPEE = new frmPesquisarEditarExcluir(null,true);
+        frmPesquisarEditarExcluir frmPEE = new frmPesquisarEditarExcluir(null, true);
         frmPEE.setVisible(true);
     }//GEN-LAST:event_mniPFMEEActionPerformed
 
@@ -177,8 +201,9 @@ public class frmPrincipal extends javax.swing.JDialog
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JPanel jPanel;
+    private javax.swing.JLabel lblBG;
     private javax.swing.JMenuItem mniCadastrar;
     private javax.swing.JMenuItem mniPFMEE;
     private javax.swing.JMenu mnuCarros;

@@ -36,7 +36,8 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jPanel1 = new javax.swing.JPanel();
         btnExcluir = new javax.swing.JButton();
@@ -67,38 +68,37 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
         btnExcluir.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnExcluir.setForeground(new java.awt.Color(204, 204, 204));
         btnExcluir.setText("Excluir");
-        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnExcluir.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnExcluirActionPerformed(evt);
             }
         });
 
         txvAno.setBackground(new java.awt.Color(245, 245, 245));
         txvAno.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        txvAno.setForeground(new java.awt.Color(0, 0, 0));
 
         txvCor.setBackground(new java.awt.Color(245, 245, 245));
         txvCor.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        txvCor.setForeground(new java.awt.Color(0, 0, 0));
 
         txvModelo.setBackground(new java.awt.Color(245, 245, 245));
         txvModelo.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        txvModelo.setForeground(new java.awt.Color(0, 0, 0));
 
         txvFabricante.setBackground(new java.awt.Color(245, 245, 245));
         txvFabricante.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        txvFabricante.setForeground(new java.awt.Color(0, 0, 0));
 
         txvID.setBackground(new java.awt.Color(245, 245, 245));
         txvID.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        txvID.setForeground(new java.awt.Color(0, 0, 0));
 
         btnPesquisarID.setBackground(new java.awt.Color(77, 80, 82));
         btnPesquisarID.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnPesquisarID.setForeground(new java.awt.Color(204, 204, 204));
         btnPesquisarID.setText("Pesquisar ID");
-        btnPesquisarID.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnPesquisarID.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnPesquisarIDActionPerformed(evt);
             }
         });
@@ -107,8 +107,10 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
         btnPesquisarFabricante.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnPesquisarFabricante.setForeground(new java.awt.Color(204, 204, 204));
         btnPesquisarFabricante.setText("Pesquisar Fabricante");
-        btnPesquisarFabricante.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnPesquisarFabricante.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnPesquisarFabricanteActionPerformed(evt);
             }
         });
@@ -117,52 +119,51 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
         btnPesquisarModelo.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnPesquisarModelo.setForeground(new java.awt.Color(204, 204, 204));
         btnPesquisarModelo.setText("Pesquisar Modelo");
-        btnPesquisarModelo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnPesquisarModelo.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnPesquisarModeloActionPerformed(evt);
             }
         });
 
         txvValor.setBackground(new java.awt.Color(245, 245, 245));
         txvValor.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        txvValor.setForeground(new java.awt.Color(0, 0, 0));
-        txvValor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        txvValor.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 txvValorActionPerformed(evt);
             }
         });
 
         lblValor.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblValor.setForeground(new java.awt.Color(0, 0, 0));
-        lblValor.setText("Valor");
+        lblValor.setText("Valor:");
 
         lblCor.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblCor.setForeground(new java.awt.Color(0, 0, 0));
-        lblCor.setText("Cor");
+        lblCor.setText("Cor:");
 
         lblAno.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblAno.setForeground(new java.awt.Color(0, 0, 0));
-        lblAno.setText("Ano");
+        lblAno.setText("Ano:");
 
         lblModelo.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblModelo.setForeground(new java.awt.Color(0, 0, 0));
-        lblModelo.setText("Modelo");
+        lblModelo.setText("Modelo:");
 
         lblFabricante.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblFabricante.setForeground(new java.awt.Color(0, 0, 0));
-        lblFabricante.setText("Fabricante");
+        lblFabricante.setText("Fabricante:");
 
         lblID.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        lblID.setForeground(new java.awt.Color(0, 0, 0));
-        lblID.setText("ID");
+        lblID.setText("ID:");
 
         btnEditar.setBackground(new java.awt.Color(77, 80, 82));
         btnEditar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnEditar.setForeground(new java.awt.Color(204, 204, 204));
         btnEditar.setText("Editar");
         btnEditar.setBorderPainted(false);
-        btnEditar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnEditar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnEditarActionPerformed(evt);
             }
         });
@@ -283,11 +284,11 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
         }
         if (listaCarros.size() == 1)
         {
-            txvID.setText(String.valueOf(listaCarros.get(0).getID()));
+            txvID.setText(String.valueOf(listaCarros.get(0).getId()));
             txvFabricante.setText(listaCarros.get(0).getFabricante());
             txvModelo.setText(listaCarros.get(0).getModelo());
             txvCor.setText(listaCarros.get(0).getCor());
-            txvAno.setText(String.valueOf(listaCarros.get(0).getAnoFabricao()));
+            txvAno.setText(String.valueOf(listaCarros.get(0).getAnoFabricacao()));
             txvValor.setText(String.valueOf(listaCarros.get(0).getValor()));
         }
         if (listaCarros.size() > 1)
@@ -295,11 +296,11 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
             Estaticos.listaCarro = listaCarros;
             frmSelecao frmS = new frmSelecao(null, true);
             frmS.setVisible(true);
-            txvID.setText(String.valueOf(Estaticos.carro.getID()));
+            txvID.setText(String.valueOf(Estaticos.carro.getId()));
             txvFabricante.setText(String.valueOf(Estaticos.carro.getFabricante()));
             txvModelo.setText(String.valueOf(Estaticos.carro.getModelo()));
             txvCor.setText(String.valueOf(Estaticos.carro.getCor()));
-            txvAno.setText(String.valueOf(Estaticos.carro.getAnoFabricao()));
+            txvAno.setText(String.valueOf(Estaticos.carro.getAnoFabricacao()));
             txvValor.setText(String.valueOf(Estaticos.carro.getValor()));
         }
     }//GEN-LAST:event_btnPesquisarFabricanteActionPerformed
@@ -366,11 +367,11 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
         }
         if (listaCarros.size() == 1)
         {
-            txvID.setText(String.valueOf(listaCarros.get(0).getID()));
+            txvID.setText(String.valueOf(listaCarros.get(0).getId()));
             txvFabricante.setText(listaCarros.get(0).getFabricante());
             txvModelo.setText(listaCarros.get(0).getModelo());
             txvCor.setText(listaCarros.get(0).getCor());
-            txvAno.setText(String.valueOf(listaCarros.get(0).getAnoFabricao()));
+            txvAno.setText(String.valueOf(listaCarros.get(0).getAnoFabricacao()));
             txvValor.setText(String.valueOf(listaCarros.get(0).getValor()));
         }
         if (listaCarros.size() > 1)
@@ -378,11 +379,11 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
             Estaticos.listaCarro = listaCarros;
             frmSelecao frmS = new frmSelecao(null, true);
             frmS.setVisible(true);
-            txvID.setText(String.valueOf(Estaticos.carro.getID()));
+            txvID.setText(String.valueOf(Estaticos.carro.getId()));
             txvFabricante.setText(String.valueOf(Estaticos.carro.getFabricante()));
             txvModelo.setText(String.valueOf(Estaticos.carro.getModelo()));
             txvCor.setText(String.valueOf(Estaticos.carro.getCor()));
-            txvAno.setText(String.valueOf(Estaticos.carro.getAnoFabricao()));
+            txvAno.setText(String.valueOf(Estaticos.carro.getAnoFabricacao()));
             txvValor.setText(String.valueOf(Estaticos.carro.getValor()));
         }
     }//GEN-LAST:event_btnPesquisarModeloActionPerformed
@@ -396,7 +397,7 @@ public class frmPesquisarEditarExcluir extends javax.swing.JDialog
             txvFabricante.setText(carro.getFabricante());
             txvModelo.setText(carro.getModelo());
             txvCor.setText(carro.getCor());
-            txvAno.setText(String.valueOf(carro.getAnoFabricao()));
+            txvAno.setText(String.valueOf(carro.getAnoFabricacao()));
             txvValor.setText(String.valueOf(carro.getValor()));
         }
         else

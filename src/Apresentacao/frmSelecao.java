@@ -25,7 +25,8 @@ public class frmSelecao extends javax.swing.JDialog
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jPanel1 = new javax.swing.JPanel();
         btnSelecionar = new javax.swing.JButton();
@@ -41,36 +42,40 @@ public class frmSelecao extends javax.swing.JDialog
         btnSelecionar.setBackground(new java.awt.Color(77, 80, 82));
         btnSelecionar.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         btnSelecionar.setText("Selecionar");
-        btnSelecionar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnSelecionar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnSelecionarActionPerformed(evt);
             }
         });
 
         tblPesquisarCarro.setBackground(new java.awt.Color(204, 204, 204));
         tblPesquisarCarro.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        tblPesquisarCarro.setForeground(new java.awt.Color(0, 0, 0));
         tblPesquisarCarro.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object [][]
+            {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null}
             },
-            new String [] {
+            new String []
+            {
                 "ID", "FABRICANTE", "MODELO", "COR", "ANO DE FABRICAÇÃO", "VALOR"
             }
         ));
         tblPesquisarCarro.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        tblPesquisarCarro.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        tblPesquisarCarro.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 tblPesquisarCarroMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(tblPesquisarCarro);
 
         lblInfo.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        lblInfo.setForeground(new java.awt.Color(0, 0, 0));
         lblInfo.setText("Selecionar veículo:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -125,11 +130,11 @@ public class frmSelecao extends javax.swing.JDialog
         for (Carro c : Estaticos.listaCarro)
         {
             modelo.addRow(new Object[]{
-                c.getID(),
+                c.getId(),
                 c.getFabricante(),
                 c.getModelo(),
                 c.getCor(),
-                c.getAnoFabricao(),
+                c.getAnoFabricacao(),
                 c.getValor()
             });
         }
@@ -142,12 +147,12 @@ public class frmSelecao extends javax.swing.JDialog
     private void tblPesquisarCarroMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_tblPesquisarCarroMouseClicked
     {//GEN-HEADEREND:event_tblPesquisarCarroMouseClicked
         int linha = tblPesquisarCarro.getSelectedRow();
-        Estaticos.carro.setID((int) tblPesquisarCarro.getValueAt(linha, 0));
+        Estaticos.carro.setId((int) tblPesquisarCarro.getValueAt(linha, 0));
         Estaticos.carro.setFabricante((String) tblPesquisarCarro.getValueAt(linha, 1));
         Estaticos.carro.setModelo((String) tblPesquisarCarro.getValueAt(linha, 2));
         Estaticos.carro.setCor((String) tblPesquisarCarro.getValueAt(linha, 3));
-        Estaticos.carro.setAnoFabricao((Integer) tblPesquisarCarro.getValueAt(linha, 4));
-        Estaticos.carro.setValor((Float) tblPesquisarCarro.getValueAt(linha, 5));
+        Estaticos.carro.setAnoFabricacao((Integer) tblPesquisarCarro.getValueAt(linha, 4));
+        Estaticos.carro.setValor((Double) tblPesquisarCarro.getValueAt(linha, 5));
     }//GEN-LAST:event_tblPesquisarCarroMouseClicked
 
     /**

@@ -6,7 +6,7 @@ public class Validacao {
 
     private String Mensagem;
     private Integer ID;
-    private Float Valor;
+    private Double Valor;
 
     public void validarDados(List<String> dadosCarro) {
         this.Mensagem = "";
@@ -56,7 +56,7 @@ public class Validacao {
 
     public void validarValor(String numeroValor) {
         try {
-            this.Valor = Float.parseFloat(numeroValor);
+            this.Valor = Double.parseDouble(numeroValor);
         } catch (Exception e) {
             this.Mensagem += "Valor inválido \n";
         }
@@ -70,7 +70,7 @@ public class Validacao {
         return ID;
     }
 
-    public Float getValor() {
+    public Double getValor() {
         return Valor;
     }
 

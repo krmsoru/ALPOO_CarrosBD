@@ -14,11 +14,11 @@ public class Controle {
         validacao.validarDados(dadosCarro);
         if (validacao.getMensagem().equals("")) {
             Carro carro = new Carro();
-            carro.setID(validacao.getId());
+            carro.setId(validacao.getId());
             carro.setFabricante(dadosCarro.get(1).toUpperCase());
             carro.setModelo(dadosCarro.get(2).toUpperCase());
             carro.setCor(dadosCarro.get(3).toUpperCase());
-            carro.setAnoFabricao(Integer.parseInt(dadosCarro.get(4)));
+            carro.setAnoFabricacao(Integer.parseInt(dadosCarro.get(4)));
             carro.setValor(validacao.getValor());
             CarroDAO carroDAO = new CarroDAO();
             carroDAO.CadastrarCarro(carro);
@@ -34,11 +34,11 @@ public class Controle {
         validacao.validarDados(dadosCarro);
         if (validacao.getMensagem().equals("")) {
             Carro carro = new Carro();
-            carro.setID(validacao.getId());
+            carro.setId(validacao.getId());
             carro.setFabricante(dadosCarro.get(1).toUpperCase());
             carro.setModelo(dadosCarro.get(2).toUpperCase());
             carro.setCor(dadosCarro.get(3).toUpperCase());
-            carro.setAnoFabricao(Integer.parseInt(dadosCarro.get(4)));
+            carro.setAnoFabricacao(Integer.parseInt(dadosCarro.get(4)));
             carro.setValor(validacao.getValor());
             CarroDAO carroDAO = new CarroDAO();
             carroDAO.EditarCarro(carro);
@@ -56,7 +56,7 @@ public class Controle {
         Carro carro = new Carro();
         if (validacao.getMensagem().equals("")) {
             CarroDAO carroDAO = new CarroDAO();
-            carro.setID(validacao.getId());
+            carro.setId(validacao.getId());
             carroDAO.ExcluirCarro(carro);
             this.mensagem = carroDAO.getMensagem();
         } else {
@@ -70,7 +70,7 @@ public class Controle {
         validacao.validarID(numeroId);
         Carro pessoa = new Carro();
         if (validacao.getMensagem().equals("")) {
-            pessoa.setID(validacao.getId());
+            pessoa.setId(validacao.getId());
             CarroDAO pessoaDAO = new CarroDAO();
             pessoa = pessoaDAO.PesquisarCarroID(pessoa);
             this.mensagem = pessoaDAO.getMensagem();
